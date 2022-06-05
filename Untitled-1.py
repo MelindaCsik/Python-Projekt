@@ -10,14 +10,14 @@ def pitagorasz():
     button1p.config(bg = "#787878")
     button1p.config(fg = "#ffffff")
     #A gomb elhelyezkedése
-    button1.pack(side = LEFT)
+    button1p.pack(side = LEFT)
     
     #Maga a gomba írt szöveget és a command amit tovább küld és a beírt feladatát elvégzi
     button2p = Button(root, text="befogo", command = befogo)
     #Itt a gomb kinézeti beállításai
     button2p.config(font = ("Ink Free", 25, "bold"))
     button2p.config(bg = "#787878")
-    button1.config(fg = "#ffffff")
+    button2p.config(fg = "#ffffff")
     #A gomb elhelyezkedése
     button2p.pack(side = RIGHT)
     
