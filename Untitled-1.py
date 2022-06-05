@@ -24,10 +24,16 @@ def pitagorasz():
     button2p.pack(side = RIGHT)
     
 def atfogo():
-    print("Helló")
+    a4 = int(input("Adja meg az ""\"a""\" szakaszt: "))
+    b3 = int(input("Adja meg a ""\"b""\" szakaszt: "))
+    cnegyzet = (a4**2)+(b3**2)
+    print(cnegyzet**0.5)
 
 def befogo():
-    print("Helló")
+    c4 = int(input("Adja meg az ""\"c""\" szakaszt: "))
+    aorb = int(input("Adja meg az ""\"a""\" vagy a ""\"a""\" szakaszt: "))
+    aorbnegyzet = (c4**2)-(aorb**2)
+    print(aorbnegyzet**0.5)
     
     
 def terulet():
@@ -59,13 +65,21 @@ def terulet():
     button3t.pack(side = RIGHT)
 
 def tegla():
-    print("helló")
+    a3 = int(input("Adja meg az ""\"a""\" szakaszt: "))
+    b2 = int(input("Adja meg a ""\"b""\" szakaszt: "))
+    print(a3 + b2)
  
 def negyzet():
-    print("helló")
+    a2 = int(input("Adja meg az ""\"a""\" szakaszt: "))
+    print(a2 * a2)
 
 def haromszog():
-     print("helló")
+    a1 = int(input("Adja meg az ""\"a""\" szakaszt: "))
+    b1 = int(input("Adja meg a ""\"b""\" szakaszt: "))
+    ab = 0
+    ab = a1 + b1
+    print(ab / 2)
+    
  
 def kerulet():
     #Maga a gomba írt szöveget és a command amit tovább küld és a beírt feladatát elvégzi
