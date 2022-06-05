@@ -119,7 +119,15 @@ def egyenlet():
     
 
 def szazalek():
-    print("Helló")
+    #bekérjük az adatokat
+    eszam = int(input("Adja meg azt a számot aminek a százalékát kiszertnéd számítani:"))
+    szszam = int(input("Adja meg a szám hány százalékát szeretné meg kapni:"))
+
+    szamitas = eszam / 100
+    eredmenySz = szszam * szamitas
+
+    print(eszam, "a/az" , szszam, "százaléka" , eredmenySz)
+
 
 def alap():
     #Maga a gomba írt szöveget és a command amit tovább küld és a beírt feladatát elvégzi
