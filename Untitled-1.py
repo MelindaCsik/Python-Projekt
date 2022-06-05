@@ -59,7 +59,7 @@ def terulet():
     button3t.pack(side = RIGHT)
 
 def tegla():
- print("helló")
+    print("helló")
  
 def negyzet():
     print("helló")
@@ -96,13 +96,27 @@ def kerulet():
     button1u.pack(side = RIGHT)
 
 def haromszogg():
-    print("")
+    aHk = int(input("Adja meg a háromszög ""\"a""\" oldalát:"))
+    bHk = int(input("Adja meg a háromszög ""\"b""\" oldalát ugyanazzal a mértékegységgel amivel az ""\"a""\"-t:"))
+    cHk = int(input("Adja meg a háromszög ""\"c""\" oldalát ugyanazzal a mértékegységgel amivel az ""\"a""\"-t és a ""\"b""\"-t :"))
+
+    eredmenyHk = aHk + bHk + cHk
+    print("A háromszög területe:" , eredmenyHk)
 
 def negyzett():
-    print("")
+    aNk = int(input("Adja meg a négyzet ""\"a""\" oldalát:"))
+
+    eredmenyNk = 4 * aNk
+    print("A négyzet kerülete:" , eredmenyNk)
 
 def teglaa():
-    print("")
+    aTk = int(input("Adja meg a téglalap ""\"a""\" oldalát:"))
+    bTk = int(input("Adja meg a téglalap ""\"b""\" oldalát ugyanazzal a mértékegységgel amivel az ""\"a""\"-t:"))
+    
+    szamitasTk = aTk + bTk
+    eredmenyTk = 2 * szamitasTk
+    print("A téglalap kerület:" , eredmenyTk)
+
 
 def egyenlet():
     a = int(input("Adja meg az ""\"a""\" értékét: "))
