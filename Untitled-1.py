@@ -8,7 +8,7 @@ def pitagorasz():
     #Maga a gomba írt szöveget és a command amit tovább küld és a beírt feladatát elvégzi
     button1p = Button(pit, text="átfogó", command = atfogo)
     #Itt a gomb kinézeti beállításai
-    button1p.config(font = ("Ink Free", 25, "bold"))
+    button1p.config(font = ("Ariel", 25, "bold"))
     button1p.config(bg = "#787878")
     button1p.config(fg = "#ffffff")
     #A gomb elhelyezkedése
@@ -17,7 +17,7 @@ def pitagorasz():
     #Maga a gomba írt szöveget és a command amit tovább küld és a beírt feladatát elvégzi
     button2p = Button(pit, text="befogó", command = befogo)
     #Itt a gomb kinézeti beállításai
-    button2p.config(font = ("Ink Free", 25, "bold"))
+    button2p.config(font = ("Ariel", 25, "bold"))
     button2p.config(bg = "#787878")
     button2p.config(fg = "#ffffff")
     #A gomb elhelyezkedése
@@ -40,7 +40,7 @@ def terulet():
     #Maga a gomba írt szöveget és a command amit tovább küld és a beírt feladatát elvégzi
     button1t = Button(ter, text="háromszög", command = haromszog)
     #Itt a gomb kinézeti beállításai
-    button1t.config(font = ("Ink Free", 25, "bold"))
+    button1t.config(font = ("Ariel", 25, "bold"))
     button1t.config(bg = "#787878")
     button1t.config(fg = "#ffffff")
     #A gomb elhelyezkedése
@@ -49,7 +49,7 @@ def terulet():
     #Maga a gomba írt szöveget és a command amit tovább küld és a beírt feladatát elvégzi
     button2t = Button(ter, text="négyzet", command = negyzet)
     #Itt a gomb kinézeti beállításai
-    button2t.config(font = ("Ink Free", 25, "bold"))
+    button2t.config(font = ("Ariel", 25, "bold"))
     button2t.config(bg = "#787878")
     button2t.config(fg = "#ffffff")
     #A gomb elhelyezkedése
@@ -58,7 +58,7 @@ def terulet():
     #Maga a gomba írt szöveget és a command amit tovább küld és a beírt feladatát elvégzi
     button3t = Button(ter, text="téglalap", command = tegla)
     #Itt a gomb kinézeti beállításai
-    button3t.config(font = ("Ink Free", 25, "bold"))
+    button3t.config(font = ("Ariel", 25, "bold"))
     button3t.config(bg = "#787878")
     button3t.config(fg = "#ffffff")
     #A gomb elhelyezkedése
@@ -85,7 +85,7 @@ def kerulet():
     #Maga a gomba írt szöveget és a command amit tovább küld és a beírt feladatát elvégzi
     button1tt = Button(ker, text="Háromszög", command = haromszogg)
     #Itt a gomb kinézeti beállításai
-    button1tt.config(font = ("Ink Free", 25, "bold"))
+    button1tt.config(font = ("Ariel", 25, "bold"))
     button1tt.config(bg = "#787878")
     button1tt.config(fg = "#ffffff")
     #A gomb elhelyezkedése
@@ -94,7 +94,7 @@ def kerulet():
     #Maga a gomba írt szöveget és a command amit tovább küld és a beírt feladatát elvégzi
     button1z = Button(ker, text="Négyzet", command = negyzett)
     #Itt a gomb kinézeti beállításai
-    button1z.config(font = ("Ink Free", 25, "bold"))
+    button1z.config(font = ("Ariel", 25, "bold"))
     button1z.config(bg = "#787878")
     button1z.config(fg = "#ffffff")
     #A gomb elhelyezkedése
@@ -103,7 +103,7 @@ def kerulet():
     #Maga a gomba írt szöveget és a command amit tovább küld és a beírt feladatát elvégzi
     button1u = Button(ker, text="Téglalap", command = teglaa)
     #Itt a gomb kinézeti beállításai
-    button1u.config(font = ("Ink Free", 25, "bold"))
+    button1u.config(font = ("Ariel", 25, "bold"))
     button1u.config(bg = "#787878")
     button1u.config(fg = "#ffffff")
     #A gomb elhelyezkedése
@@ -161,7 +161,7 @@ def alap():
     #Maga a gomba írt szöveget és a command amit tovább küld és a beírt feladatát elvégzi
     button1a = Button(alapp, text="Összeadás", command = add)
     #Itt a gomb kinézeti beállításai
-    button1a.config(font = ("Ink Free", 25, "bold"))
+    button1a.config(font = ("Ariel", 25, "bold"))
     button1a.config(bg = "#787878")
     button1a.config(fg = "#ffffff")
     #A gomb elhelyezkedése
@@ -170,7 +170,7 @@ def alap():
     #Maga a gomba írt szöveget és a command amit tovább küld és a beírt feladatát elvégzi
     button1s = Button(alapp, text="Kivonás", command = von)
     #Itt a gomb kinézeti beállításai
-    button1s.config(font = ("Ink Free", 25, "bold"))
+    button1s.config(font = ("Ariel", 25, "bold"))
     button1s.config(bg = "#787878")
     button1s.config(fg = "#ffffff")
     #A gomb elhelyezkedése
@@ -179,7 +179,7 @@ def alap():
     #Maga a gomba írt szöveget és a command amit tovább küld és a beírt feladatát elvégzi
     button1ss = Button(alapp, text="Szorzás", command = szor)
     #Itt a gomb kinézeti beállításai
-    button1ss.config(font = ("Ink Free", 25, "bold"))
+    button1ss.config(font = ("Ariel", 25, "bold"))
     button1ss.config(bg = "#787878")
     button1ss.config(fg = "#ffffff")
     #A gomb elhelyezkedése
@@ -188,7 +188,7 @@ def alap():
     #Maga a gomba írt szöveget és a command amit tovább küld és a beírt feladatát elvégzi
     button1hh = Button(alapp, text="Osztás", command = oszt)
     #Itt a gomb kinézeti beállításai
-    button1hh.config(font = ("Ink Free", 25, "bold"))
+    button1hh.config(font = ("Ariel", 25, "bold"))
     button1hh.config(bg = "#787878")
     button1hh.config(fg = "#ffffff")
     #A gomb elhelyezkedése
@@ -255,7 +255,7 @@ ker = Tk()
 #Maga a gomba írt szöveget és a command amit tovább küld és a beírt feladatát elvégzi
 button1 = Button(root, text="Pitagorasz", command = pitagorasz)
 #Itt a gomb kinézeti beállításai
-button1.config(font = ("Ink Free", 25, "bold"))
+button1.config(font = ("Ariel", 25, "bold"))
 button1.config(bg = "#787878")
 button1.config(fg = "#ffffff")
 #A gomb elhelyezkedése
@@ -264,7 +264,7 @@ button1.pack(side = TOP)
 #Maga a gomba írt szöveget és a command amit tovább küld és a beírt feladatát elvégzi
 button2 = Button(root, text="Terület", command = terulet)
 #Itt a gomb kinézeti beállításai
-button2.config(font = ("Ink Free", 25, "bold"))
+button2.config(font = ("Ariel", 25, "bold"))
 button2.config(bg = "#787878")
 button2.config(fg = "#ffffff")
 #A gomb elhelyezkedése
@@ -273,7 +273,7 @@ button2.pack(side = TOP)
 #Maga a gomba írt szöveget és a command amit tovább küld és a beírt feladatát elvégzi
 button3 = Button(root, text="Kerület", command = kerulet)
 #Itt a gomb kinézeti beállításai
-button3.config(font = ("Ink Free", 25, "bold"))
+button3.config(font = ("Ariel", 25, "bold"))
 button3.config(bg = "#787878")
 button3.config(fg = "#ffffff")
 #A gomb elhelyezkedése
@@ -282,7 +282,7 @@ button3.pack(side = TOP)
 #Maga a gomba írt szöveget és a command amit tovább küld és a beírt feladatát elvégzi
 button4 = Button(root, text="Másodfokú egyenlet", command = egyenlet)
 #Itt a gomb kinézeti beállításai
-button4.config(font = ("Ink Free", 25, "bold"))
+button4.config(font = ("Ariel", 25, "bold"))
 button4.config(bg = "#787878")
 button4.config(fg = "#ffffff")
 #A gomb elhelyezkedése
@@ -291,7 +291,7 @@ button4.pack(side = TOP)
 #Maga a gomba írt szöveget és a command amit tovább küld és a beírt feladatát elvégzi
 button5 = Button(root, text="Százalékszámítás", command = szazalek)
 #Itt a gomb kinézeti beállításai
-button5.config(font = ("Ink Free", 25, "bold"))
+button5.config(font = ("Ariel", 25, "bold"))
 button5.config(bg = "#787878")
 button5.config(fg = "#ffffff")
 #A gomb elhelyezkedése
@@ -300,7 +300,7 @@ button5.pack(side = TOP)
 #Maga a gomba írt szöveget és a command amit tovább küld és a beírt feladatát elvégzi
 button6 = Button(root, text="Alap műveletek", command = alap)
 #Itt a gomb kinézeti beállításai
-button6.config(font = ("Ink Free", 25, "bold"))
+button6.config(font = ("Ariel", 25, "bold"))
 button6.config(bg = "#787878")
 button6.config(fg = "#ffffff")
 #A gomb elhelyezkedése
