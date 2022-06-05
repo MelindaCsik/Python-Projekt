@@ -143,21 +143,25 @@ def von():
 
 
 def szor():
+    #bekérjük az adatokat
     szam1 = int(input("Írja be az első számot:"))
     szam2 = int(input("Írja be a második számot:"))
-
+    
+    #végrehajtjuk a kért műveletet
     eredmeny1 = szam1 * szam2
     print(eredmeny1)
 
 
 def oszt():
+    #bekérjük a az adatokat
     szam3 = int(input("Melyik számot szerné elosztani:"))
     szam4 = int(input("Melyik számmal szertné elosztani:"))
-
+   
+    #végrehajtjuk a kért műveletet
     eredmeny2 = szam3 / szam4
     print(eredmeny2)
 
-    
+
 #----CSOPORT----
 #A gomb csoportjai amivel később dolgozhatunk
 root = Tk()
