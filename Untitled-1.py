@@ -32,7 +32,7 @@ def befogo():
     
 def terulet():
     #Maga a gomba írt szöveget és a command amit tovább küld és a beírt feladatát elvégzi
-    button1t = Button(root, text="háromszög", command = haromszog)
+    button1t = Button(ter, text="háromszög", command = haromszog)
     #Itt a gomb kinézeti beállításai
     button1t.config(font = ("Ink Free", 25, "bold"))
     button1t.config(bg = "#787878")
@@ -41,7 +41,7 @@ def terulet():
     button1t.pack(side = LEFT)
     
     #Maga a gomba írt szöveget és a command amit tovább küld és a beírt feladatát elvégzi
-    button2t = Button(root, text="négyzet", command = negyzet)
+    button2t = Button(ter, text="négyzet", command = negyzet)
     #Itt a gomb kinézeti beállításai
     button2t.config(font = ("Ink Free", 25, "bold"))
     button2t.config(bg = "#787878")
@@ -50,7 +50,7 @@ def terulet():
     button2t.pack(side = TOP)
     
     #Maga a gomba írt szöveget és a command amit tovább küld és a beírt feladatát elvégzi
-    button3t = Button(root, text="téglalap", command = tegla)
+    button3t = Button(ter, text="téglalap", command = tegla)
     #Itt a gomb kinézeti beállításai
     button3t.config(font = ("Ink Free", 25, "bold"))
     button3t.config(bg = "#787878")
@@ -68,17 +68,62 @@ def haromszog():
      print("helló")
  
 def kerulet():
-    print("Helló")
+    #Maga a gomba írt szöveget és a command amit tovább küld és a beírt feladatát elvégzi
+    button1tt = Button(ker, text="Háromszög", command = haromszogg)
+    #Itt a gomb kinézeti beállításai
+    button1tt.config(font = ("Ink Free", 25, "bold"))
+    button1tt.config(bg = "#787878")
+    button1tt.config(fg = "#ffffff")
+    #A gomb elhelyezkedése
+    button1tt.pack(side = LEFT)
+    
+    #Maga a gomba írt szöveget és a command amit tovább küld és a beírt feladatát elvégzi
+    button1z = Button(ker, text="Négyzet", command = negyzett)
+    #Itt a gomb kinézeti beállításai
+    button1z.config(font = ("Ink Free", 25, "bold"))
+    button1z.config(bg = "#787878")
+    button1z.config(fg = "#ffffff")
+    #A gomb elhelyezkedése
+    button1z.pack(side = TOP)
+    
+    #Maga a gomba írt szöveget és a command amit tovább küld és a beírt feladatát elvégzi
+    button1u = Button(ker, text="Téglalap", command = teglaa)
+    #Itt a gomb kinézeti beállításai
+    button1u.config(font = ("Ink Free", 25, "bold"))
+    button1u.config(bg = "#787878")
+    button1u.config(fg = "#ffffff")
+    #A gomb elhelyezkedése
+    button1u.pack(side = RIGHT)
+
+def haromszogg():
+    print("")
+
+def negyzett():
+    print("")
+
+def teglaa():
+    print("")
 
 def egyenlet():
-    print("Helló")
+    a = int(input("Adja meg az ""\"a""\" értékét: "))
+    b = int(input("Adja meg az ""\"b""\" értékét: "))
+    c = int(input("Adja meg az ""\"c""\" értékét: "))
+    negyzetalat = (b**2)-(4*a*c)
+    print(negyzetalat)
+    elagaz = negyzetalat**0.5
+    egyut = (b-elagaz) / (2*a)
+    ketut = (b+elagaz) / (2*a)
+    print("első eset: ", egyut)
+    print("második eset: ", ketut)
+    
+    
 
 def szazalek():
     print("Helló")
 
 def alap():
     #Maga a gomba írt szöveget és a command amit tovább küld és a beírt feladatát elvégzi
-    button1a = Button(root, text="Összeadás", command = add)
+    button1a = Button(alapp, text="Összeadás", command = add)
     #Itt a gomb kinézeti beállításai
     button1a.config(font = ("Ink Free", 25, "bold"))
     button1a.config(bg = "#787878")
@@ -87,7 +132,7 @@ def alap():
     button1a.pack(side = LEFT)
     
     #Maga a gomba írt szöveget és a command amit tovább küld és a beírt feladatát elvégzi
-    button1s = Button(root, text="Kivonás", command = von)
+    button1s = Button(alapp, text="Kivonás", command = von)
     #Itt a gomb kinézeti beállításai
     button1s.config(font = ("Ink Free", 25, "bold"))
     button1s.config(bg = "#787878")
@@ -96,22 +141,22 @@ def alap():
     button1s.pack(side = RIGHT)
     
     #Maga a gomba írt szöveget és a command amit tovább küld és a beírt feladatát elvégzi
-    button1s = Button(root, text="Szorzás", command = szor)
+    button1ss = Button(alapp, text="Szorzás", command = szor)
     #Itt a gomb kinézeti beállításai
-    button1s.config(font = ("Ink Free", 25, "bold"))
-    button1s.config(bg = "#787878")
-    button1s.config(fg = "#ffffff")
+    button1ss.config(font = ("Ink Free", 25, "bold"))
+    button1ss.config(bg = "#787878")
+    button1ss.config(fg = "#ffffff")
     #A gomb elhelyezkedése
-    button1s.pack(side = LEFT)
+    button1ss.pack(side = LEFT)
     
     #Maga a gomba írt szöveget és a command amit tovább küld és a beírt feladatát elvégzi
-    button1 = Button(root, text="Osztás", command = oszt)
+    button1hh = Button(alapp, text="Osztás", command = oszt)
     #Itt a gomb kinézeti beállításai
-    button1s.config(font = ("Ink Free", 25, "bold"))
-    button1s.config(bg = "#787878")
-    button1s.config(fg = "#ffffff")
+    button1hh.config(font = ("Ink Free", 25, "bold"))
+    button1hh.config(bg = "#787878")
+    button1hh.config(fg = "#ffffff")
     #A gomb elhelyezkedése
-    button1s.pack(side = RIGHT)
+    button1hh.pack(side = TOP)
 
 def add():
     numm1 = 0
@@ -122,7 +167,7 @@ def add():
     while True:
         add = int(input("Összeadandó szám: "))
         num1 = num1 + add
-        numm2 = numm2 + 1
+        numm1 = numm1 + 1
         if fut1 == numm1:
             print(num1)
             break
@@ -166,7 +211,9 @@ def oszt():
 #A gomb csoportjai amivel később dolgozhatunk
 root = Tk()
 pit = Tk()
-
+alapp = Tk()
+ter = Tk()
+ker = Tk()
 
 #----GOMBOK----
 #Maga a gomba írt szöveget és a command amit tovább küld és a beírt feladatát elvégzi
