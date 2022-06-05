@@ -1,23 +1,25 @@
 from tkinter import LEFT, RIGHT, TOP, Button
 from tkinter.tix import Tk
+from turtle import right
 
-
+#a gombok programjai
 def pitagorasz():
+    
     #Maga a gomba írt szöveget és a command amit tovább küld és a beírt feladatát elvégzi
-    button1p = Button(root, text="atfogo", command = atfogo)
+    button1p = Button(pit, text="átfogó", command = atfogo)
     #Itt a gomb kinézeti beállításai
     button1p.config(font = ("Ink Free", 25, "bold"))
     button1p.config(bg = "#787878")
     button1p.config(fg = "#ffffff")
     #A gomb elhelyezkedése
-    button1.pack(side = LEFT)
+    button1p.pack(side = LEFT)
     
     #Maga a gomba írt szöveget és a command amit tovább küld és a beírt feladatát elvégzi
-    button2p = Button(root, text="befogo", command = befogo)
+    button2p = Button(pit, text="befogó", command = befogo)
     #Itt a gomb kinézeti beállításai
     button2p.config(font = ("Ink Free", 25, "bold"))
     button2p.config(bg = "#787878")
-    button1.config(fg = "#ffffff")
+    button2p.config(fg = "#ffffff")
     #A gomb elhelyezkedése
     button2p.pack(side = RIGHT)
     
@@ -36,7 +38,7 @@ def terulet():
     button1t.config(bg = "#787878")
     button1t.config(fg = "#ffffff")
     #A gomb elhelyezkedése
-    button1t.pack(side = RIGHT)
+    button1t.pack(side = LEFT)
     
     #Maga a gomba írt szöveget és a command amit tovább küld és a beírt feladatát elvégzi
     button2t = Button(root, text="négyzet", command = negyzet)
@@ -45,7 +47,7 @@ def terulet():
     button2t.config(bg = "#787878")
     button2t.config(fg = "#ffffff")
     #A gomb elhelyezkedése
-    button2t.pack(side = RIGHT)
+    button2t.pack(side = TOP)
     
     #Maga a gomba írt szöveget és a command amit tovább küld és a beírt feladatát elvégzi
     button3t = Button(root, text="téglalap", command = tegla)
@@ -56,6 +58,15 @@ def terulet():
     #A gomb elhelyezkedése
     button3t.pack(side = RIGHT)
 
+def tegla():
+ print("helló")
+ 
+def negyzet():
+    print("helló")
+
+def haromszog():
+     print("helló")
+ 
 def kerulet():
     print("Helló")
 
@@ -65,10 +76,81 @@ def egyenlet():
 def szazalek():
     print("Helló")
 
+def alap():
+    #Maga a gomba írt szöveget és a command amit tovább küld és a beírt feladatát elvégzi
+    button1a = Button(root, text="Összeadás", command = add)
+    #Itt a gomb kinézeti beállításai
+    button1a.config(font = ("Ink Free", 25, "bold"))
+    button1a.config(bg = "#787878")
+    button1a.config(fg = "#ffffff")
+    #A gomb elhelyezkedése
+    button1a.pack(side = LEFT)
+    
+    #Maga a gomba írt szöveget és a command amit tovább küld és a beírt feladatát elvégzi
+    button1s = Button(root, text="Kivonás", command = von)
+    #Itt a gomb kinézeti beállításai
+    button1s.config(font = ("Ink Free", 25, "bold"))
+    button1s.config(bg = "#787878")
+    button1s.config(fg = "#ffffff")
+    #A gomb elhelyezkedése
+    button1s.pack(side = RIGHT)
+    
+    #Maga a gomba írt szöveget és a command amit tovább küld és a beírt feladatát elvégzi
+    button1s = Button(root, text="Szorzás", command = szor)
+    #Itt a gomb kinézeti beállításai
+    button1s.config(font = ("Ink Free", 25, "bold"))
+    button1s.config(bg = "#787878")
+    button1s.config(fg = "#ffffff")
+    #A gomb elhelyezkedése
+    button1s.pack(side = LEFT)
+    
+    #Maga a gomba írt szöveget és a command amit tovább küld és a beírt feladatát elvégzi
+    button1 = Button(root, text="Osztás", command = oszt)
+    #Itt a gomb kinézeti beállításai
+    button1s.config(font = ("Ink Free", 25, "bold"))
+    button1s.config(bg = "#787878")
+    button1s.config(fg = "#ffffff")
+    #A gomb elhelyezkedése
+    button1s.pack(side = RIGHT)
 
+def add():
+    numm1 = 0
+    num1 = 0
+    #bekérem az adatokat
+    fut1 = int(input("Hány számot szeretne összeadni: "))
+    #lefuttatom annyiszor amennyiszer kérte a felhasználó és a végén kiiratom
+    while True:
+        add = int(input("Összeadandó szám: "))
+        num1 = num1 + add
+        numm2 = numm2 + 1
+        if fut1 == numm1:
+            print(num1)
+            break
+    
+def von():
+    numm = 0
+    #bekérem az adatokat
+    fut2 = int(input("Hány számot szeretne kivonni: "))
+    num2 = int(input("Milyen számból szeretne kivonni: "))
+    #lefuttatom annyiszor amennyiszer kérte a felhasználó és a végén kiiratom
+    while True:
+        von = int(input("Kivonandó szám: "))
+        num2 = num2 - von
+        numm = numm + 1
+        if fut2 == numm:
+            print(num2)
+            break
+
+def szor():
+    print("")
+
+def oszt():
+    print("")
+    
 #----CSOPORT----
 #A gomb csoportjai amivel később dolgozhatunk
 root = Tk()
+pit = Tk()
 
 
 #----GOMBOK----
@@ -110,6 +192,15 @@ button4.pack(side = TOP)
 
 #Maga a gomba írt szöveget és a command amit tovább küld és a beírt feladatát elvégzi
 button5 = Button(root, text="Százalékszámítás", command = szazalek)
+#Itt a gomb kinézeti beállításai
+button5.config(font = ("Ink Free", 25, "bold"))
+button5.config(bg = "#787878")
+button5.config(fg = "#ffffff")
+#A gomb elhelyezkedése
+button5.pack(side = TOP)
+
+#Maga a gomba írt szöveget és a command amit tovább küld és a beírt feladatát elvégzi
+button5 = Button(root, text="Alap műveletek", command = alap)
 #Itt a gomb kinézeti beállításai
 button5.config(font = ("Ink Free", 25, "bold"))
 button5.config(bg = "#787878")
