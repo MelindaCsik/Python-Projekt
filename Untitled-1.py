@@ -141,11 +141,22 @@ def von():
             print(num2)
             break
 
+
 def szor():
-    print("")
+    szam1 = int(input("Írja be az első számot:"))
+    szam2 = int(input("Írja be a második számot:"))
+
+    eredmeny1 = szam1 * szam2
+    print(eredmeny1)
+
 
 def oszt():
-    print("")
+    szam3 = int(input("Melyik számot szerné elosztani:"))
+    szam4 = int(input("Melyik számmal szertné elosztani:"))
+
+    eredmeny2 = szam3 / szam4
+    print(eredmeny2)
+
     
 #----CSOPORT----
 #A gomb csoportjai amivel később dolgozhatunk
@@ -200,13 +211,13 @@ button5.config(fg = "#ffffff")
 button5.pack(side = TOP)
 
 #Maga a gomba írt szöveget és a command amit tovább küld és a beírt feladatát elvégzi
-button5 = Button(root, text="Alap műveletek", command = alap)
+button6 = Button(root, text="Alap műveletek", command = alap)
 #Itt a gomb kinézeti beállításai
-button5.config(font = ("Ink Free", 25, "bold"))
-button5.config(bg = "#787878")
-button5.config(fg = "#ffffff")
+button6.config(font = ("Ink Free", 25, "bold"))
+button6.config(bg = "#787878")
+button6.config(fg = "#ffffff")
 #A gomb elhelyezkedése
-button5.pack(side = TOP)
+button6.pack(side = TOP)
 
 
 #----MEGJELENÍTÉS----   
